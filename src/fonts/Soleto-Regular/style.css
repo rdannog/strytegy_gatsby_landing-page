@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Soleto';
+    src: local('Soleto Regular'), local('Soleto-Regular'),
+        url('Soleto-Regular.woff2') format('woff2'),
+        url('Soleto-Regular.woff') format('woff'),
+        url('Soleto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }

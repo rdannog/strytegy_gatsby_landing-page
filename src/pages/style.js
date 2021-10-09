@@ -1,6 +1,16 @@
 import { createGlobalStyle } from "styled-components";
+import Soleto from "../fonts/Soleto-Regular/Soleto-Regular.ttf"
+import Paralucent from "../fonts/Paralucent/Paralucent.ttf"
 
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+    font-family: "Soleto";
+    src: url(${Soleto});
+  }
+@font-face {
+    font-family: "Paralucent";
+    src: url(${Paralucent});
+}
 body{
     padding:0;
     margin: 0;

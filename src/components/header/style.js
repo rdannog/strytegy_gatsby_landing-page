@@ -26,13 +26,16 @@ export const Navigation =styled.nav`
     justify-content: space-evenly;
 `
 export const ButtonBlogFaq =styled.a`
-    width:3vw;
-    font-size: 1.55vw;
+    
+    font-size: 1.2vw;
     font-family: 'Paralucent';
     font-weight: bold;
     text-transform: uppercase;
-    margin-right: 1.5vw;
+    margin-right: 2vw;
     cursor: pointer;
+    &:hover{
+        border-bottom: 3px solid;
+    }
 `
 export const ButtonEnterContainer =styled.span`
     width: 14.8vw;
@@ -50,16 +53,18 @@ export const ButtonEnter =styled.button`
     border:#FFCE06;
     cursor: pointer;
     color:#25294C;
+    opacity:0.7;
     &:hover{
-        width:14.8vw;
+        width:14vw;
         height: 8.5vh;
         transition: .4s ease;
+        opacity:1;
     }
 `
 export const ButtonLang =styled.button`
-    width:2.5vw;
-    height: 4.4vh;
-    font-size: 1.1vw;
+    width:2.2vw;
+    height: 5.3vh;
+    font-size: 1vw;
     font-weight: bolder;
     text-transform: uppercase;
     border-radius: 50%;
@@ -67,6 +72,9 @@ export const ButtonLang =styled.button`
     background: none;
     cursor: pointer;
     margin-right: 3vw;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 `
 
 /*export const  =styled.`

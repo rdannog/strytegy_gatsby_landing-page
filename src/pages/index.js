@@ -9,16 +9,32 @@ export const query = graphql`
     alldata {
       projects{
         btnBlog
-        btnFaq
         btnEnter
+        btnFaq
         btnLang
         btnStart
-        title
+        introBottomSubtitle1
+        introBottomSubtitle2
+        introBottomTitle
+        itemValue1
+        itemValue2
+        itemValue3
+        itemValue4
+        resourceSubtitle
+        resourceTitle
+        stage
         subtitle
-        logo {
+        title
+        resourceImage {
           url
         }
-        backgroundHeader {
+        journeyImage {
+          url
+        }
+        journeySubtitle1
+        journeySubtitle2
+        journeyTitle
+        logo {
           url
         }
       }
@@ -26,22 +42,23 @@ export const query = graphql`
   }
 `
 export default function Index ({ data }) {
+  const dataMain = data.alldata.projects[0]
   return (
     <div>
       {console.log(data)}
       <GlobalStyle/>
       <Header
-        logo={data.alldata.projects[0].logo.url}
-        blog={data.alldata.projects[0].btnBlog}
-        faq={data.alldata.projects[0].btnFaq}
-        enter={data.alldata.projects[0].btnEnter}
-        lang={data.alldata.projects[0].btnLang}
+        logo={dataMain.logo.url}
+        blog={dataMain.btnBlog}
+        faq={dataMain.btnFaq}
+        enter={dataMain.btnEnter}
+        lang={dataMain.btnLang}
       />
       <Main
-        title={data.alldata.projects[0].title}
-        subtitle={data.alldata.projects[0].subtitle}
-        start={data.alldata.projects[0].btnStart}
-        background={data.alldata.projects[0].backgroundHeader.url}
+        title={dataMain.title}
+        subtitle={dataMain.subtitle}
+        start={dataMain.btnStart}
+        background={dataMain.backgroundHeader.url}
       />
     </div>
 
