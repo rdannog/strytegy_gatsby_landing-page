@@ -5,7 +5,7 @@
 
 <a href="https://strytegy-clone.netlify.app/">My project online</a>
 
-## 🚀 Quick start
+## 🚀 Quick start with Gatsby
 
 1.  **Create a Gatsby site.**
 
