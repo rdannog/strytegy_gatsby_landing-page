@@ -5,7 +5,32 @@ export function Main({
     title,
     subtitle,
     start,
-    background
+    background,
+    bottomTitle,
+    bottomSubtitle1,
+    bottomSubtitle2,
+    itemValue1,
+    itemValue2,
+    itemValue3,
+    itemValue4,
+    resourceImage,
+    resourceTitle,
+    resourceSubtitle,
+    journeyImage,
+    journeyTitle,
+    journeySubtitle1,
+    journeySubtitle2,
+    strytegySubtitle,
+    strytegyTitle,
+    gridImage1,
+    gridImage2,
+    gridImage3,
+    gridItem1,
+    gridItem2,
+    gridItem3,
+    gridItem4,
+    gridItem5,
+    gridItem6
 }) {
     return (
         <S.Container>
@@ -28,11 +53,11 @@ export function Main({
                 <div>
                     <S.FeatureTitleContainer>
                         <S.FeatureTitle>
-                            <h2>Strytegy é a nova evolução do ágil</h2>
+                            <h2>{bottomTitle}</h2>
                         </S.FeatureTitle>
                         <S.FeatureSubtitle>
-                            <p>Construa projetos mais colaborativos de forma remota, focados em resultados. </p>
-                            <p>Acesso ilimitado. Conheça os nossos recursos:</p>
+                            <span>{bottomSubtitle1}</span>
+                            <span>{bottomSubtitle2}</span>
                         </S.FeatureSubtitle>
                     </S.FeatureTitleContainer>
                     <div>
@@ -40,45 +65,105 @@ export function Main({
                             <S.LinksMenu>
                                 <S.MenuItem>
                                     <S.ItemContent>
-                                        <S.ItemValue>Ao vivo e Colaborativo</S.ItemValue>
+                                        <S.ItemValue>{itemValue1}</S.ItemValue>
                                     </S.ItemContent>
                                 </S.MenuItem>
                                 <S.Division/>
                                 <S.MenuItem>
                                     <S.ItemContent>
-                                        <S.ItemValue>Biblioteca de Templates</S.ItemValue>
+                                        <S.ItemValue>{itemValue2}</S.ItemValue>
                                     </S.ItemContent>
                                 </S.MenuItem>
                                 <S.Division/>
                                 <S.MenuItem>
                                     <S.ItemContent>
-                                        <S.ItemValue>Áreas de trabalho e Projetos</S.ItemValue>
+                                        <S.ItemValue>{itemValue3}</S.ItemValue>
                                     </S.ItemContent>
                                 </S.MenuItem>
                                 <S.Division/>
                                 <S.MenuItem>
                                     <S.ItemContent>
-                                        <S.ItemValue>Exporte e Compartilhe</S.ItemValue>
+                                        <S.ItemValue>{itemValue4}</S.ItemValue>
                                     </S.ItemContent>
-
                                 </S.MenuItem>
                             </S.LinksMenu>
                         </S.LinksContainer>
                         <S.ResourcesContainer>
                             <S.ResourceImageContainer>
-                                <img src="./assets/img/feature-meeting-9cf50dd5f3776a598ae12991f992de91.gif" alt=""/>
+                                <S.ResourceImage src={resourceImage} alt=""/>
                             </S.ResourceImageContainer>
                             <S.ResourceTextContainer>
-                                <S.ResourceTitle>Ao vivo e Colaborativo</S.ResourceTitle>
-                                <S.ResourceTextContainer>Trabalhar de forma remota ficou muito mais fácil. Nossos
-                                    espaços colaborativos proporcionam maior integração e visualização das ideias em tempo
-                                    real.
-                                </S.ResourceTextContainer>
+                                <S.ResourceTitle>{resourceTitle}</S.ResourceTitle>
+                                <S.ResourceText>{resourceSubtitle}</S.ResourceText>
                             </S.ResourceTextContainer>
                         </S.ResourcesContainer>
                     </div>
                 </div>
             </section>
+            <S.JourneyContainer>
+                <S.JourneyImage src={journeyImage} alt=""/>
+                <S.JourneyText>
+                    <S.JourneyTitle>{journeyTitle}</S.JourneyTitle>
+                    <S.JourneySubtitle>{journeySubtitle1} <br/>{journeySubtitle2}</S.JourneySubtitle>
+                </S.JourneyText>
+            </S.JourneyContainer>
+            <S.StrytegyContainer>
+                <S.IntroTextContainer>
+                    <S.TextContainer>
+                        <S.TitleStrytegy>{strytegyTitle}</S.TitleStrytegy>
+                        <S.TextStrytegy>{strytegySubtitle}</S.TextStrytegy>
+                    </S.TextContainer>
+                </S.IntroTextContainer>
+                <S.GridWrapper>
+                    <S.Grid>
+                        <S.GridContent>
+                            <S.GridItem style={{height: "48.5vh"}}>
+                                <img src={gridImage1} alt=""/>
+                                <p>
+                                    <b>Startups</b>{gridItem1.substring(8)}
+                                </p>
+                            </S.GridItem>
+                        </S.GridContent>
+                        <S.GridContent style={{height: "31.4vh"}}>
+                            <S.GridItem>
+                                <p>
+                                <b>Freelancers and self-employed</b>{gridItem2.substring(29)}
+                                </p>
+                            </S.GridItem>
+                        </S.GridContent>
+                        <S.GridContent style={{height: "48.5vh"}}>
+                            <S.GridItem>
+                                <img src={gridImage2} alt=""/>
+                                <p>
+                                    <b>Professionals and teams</b>{gridItem3.substring(23)}
+                                </p>
+                            </S.GridItem>
+                        </S.GridContent>
+                        <S.GridContent style={{height: "31.4vh", position: "relative", top: "3vh"}}>
+                            <S.GridItem>
+                                <p>
+                                    <b>Managers</b>{gridItem4.substring(8)}
+                                </p>
+                            </S.GridItem>
+                        </S.GridContent>
+                        <S.GridContent style={{height: "48.5vh", position: "relative", bottom:"13vh"}}>
+                            <S.GridItem>
+                                <img src={gridImage3} alt=""/>
+                                <p>
+                                 <b>Agile Squads and remote workers</b>{gridItem5.substring(31)}
+                                </p>
+                            </S.GridItem>
+                        </S.GridContent>
+                        <S.GridContent style={{height: "31.4vh", position: "relative", top: "3vh"}}>
+                            <S.GridItem>
+                                <p>
+                                    <b>Business founders</b>{gridItem6.substring(17)}
+                                </p>
+                            </S.GridItem>
+                        </S.GridContent>
+                    </S.Grid>
+                </S.GridWrapper>
+            </S.StrytegyContainer>
         </S.Container>
     )
 }
