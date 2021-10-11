@@ -230,7 +230,7 @@ export const Grid =styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
-    bottom: 20vh;
+    bottom: 14vh;
 `
 export const GridContent =styled.div`
     width: 22vw;
