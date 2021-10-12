@@ -163,6 +163,43 @@ export function Main({
                         </S.GridContent>
                     </S.Grid>
                 </S.GridWrapper>
+                <S.BlankSpace/>
+                <S.DataContainer>
+                    <h2>Your data is safe</h2>
+                    <img style={{width:"60vw"}} src="https://www.strytegy.com/static/security-3b980a306563c64f34ffb76769f48cf0.webp"/>
+                </S.DataContainer>
+                <S.List>
+                    <ul>
+                        <li>
+                            • Strytegy follows the Brazilian Federal law number 13.709/18 (Brazilian General Personal Data Protection Law – “LGPD”)
+                        </li>
+                        <li>
+                            • The security is compatible with the certifications CSA, SOC 1-3, ISO/IEC 27001, SO/IEC 27017, ISO/IEC 27018 and ISO 9001.
+                        </li>
+                        <li>
+                            • Strytegy follows the Allowlisting protocol: a measure that reduces harmful security attacks by allowing only trusted files, canvases, journeys and processes to be run.
+                        </li>
+                    </ul>
+                </S.List>
+                <S.UsersContainer>
+                    <h2>What the users are saying</h2>
+                    <div>
+                        <p>I really enjoy using Strytegy because I can share and organize my work script with my teammates dynamically, remotely and in real time. </p>
+                        <div>
+                            <div>
+                                <img style={{width:"4vw", height:"10vh", borderRadius:"50%"}} src="https://media.graphcms.com/OTNobCioT8uGxRJCeCku"/>
+                            </div>
+                            <div>
+                                <h3>Renan Carvalho</h3>
+                                <p>Product Designer at Vai na Web</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </S.UsersContainer>
+                <div style={{backgroundColor: "rgb(236,231,247)"}}>
+                        <svg viewBox="0 150 1440 120"><defs><filter id="wavy.inline" x="0" y="0" width="1461" height="266.3" filterUnits="userSpaceOnUse"><feOffset dy="6" input="SourceAlpha"></feOffset><feGaussianBlur stdDeviation="3.5" result="blur"></feGaussianBlur><feFlood flood-opacity="0.078"></feFlood><feComposite operator="in" in2="blur"></feComposite><feComposite in="SourceGraphic"></feComposite></filter></defs><g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#wavy.inline)"><path id="wavy.inline-2" data-name="wavy.inline" d="M0,160l80,21.3c80,21.7,240,63.7,400,64,160-.3,320-42.3,480-58.6,160-15.7,320-5.7,400,0l80,5.3V0H0Z" fill="#22254B"></path></g></svg>
+                </div>
             </S.StrytegyContainer>
         </S.Container>
     )

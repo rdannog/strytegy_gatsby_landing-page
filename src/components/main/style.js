@@ -184,6 +184,10 @@ export const JourneySubtitle =styled.p`
 `
 export const StrytegyContainer =styled.section`
     width: 100%;
+    svg{
+        transform: scaleX(-1); 
+        background-color:rgb(236, 231, 247);    
+    }
 `
 export const IntroTextContainer =styled.div`
     height: 80vh;
@@ -260,8 +264,54 @@ export const GridItem =styled.div`
     }
     img{
         width: 12vw;
-        margin-top:5vh;
+        margin-top:2vh;
     }
+`
+export const BlankSpace =styled.div`
+    height: 90vh;
+    display: flex;
+    align-items: flex-end;
+    
+`
+export const DataContainer =styled.section`
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    h2{
+        font-family: 'Paralucent';
+        font-size: 4.1vw;
+        font-weight: bolder;
+    }
+`
+export const List =styled.section`
+    height: 96vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    ul{
+        width:65%;
+        height:70%;
+        list-style:none;
+        font-family: 'Soleto';
+        font-size: 1.7vw;
+        font-weight:lighter;
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+    }
+    li{
+        text-align:center;
+    }
+`
+export const UsersContainer = styled.section`
+    height:75vh;
+    color:white;
+    background-color: #22254B;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
 `
 /*export const  =styled.`
    

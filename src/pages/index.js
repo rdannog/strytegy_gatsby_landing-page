@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Header } from "../components/header"
 import { Main } from "../components/main"
+import { Footer } from "../components/footer"
 import { createGlobalStyle } from "styled-components";
 import Soleto from "../fonts/Soleto-Regular/Soleto-Regular.ttf"
 import Paralucent from "../fonts/Paralucent/Paralucent.ttf"
@@ -135,6 +136,7 @@ export default function Index ({ data }) {
         gridItem5={dataMain.gridItem5}
         gridItem6={dataMain.gridItem6}
       />
+      <Footer />
     </div>
 
   )
