@@ -76,7 +76,3 @@ export const ButtonLang =styled.button`
     align-items:center;
     justify-content:center;
 `
-
-/*export const  =styled.`
-   
-`*/

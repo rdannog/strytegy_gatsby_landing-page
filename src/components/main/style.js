@@ -343,6 +343,3 @@ export const UserInfo = styled.div`
         margin-right: 1vw;
     }
 `
-/*export const  =styled.`
-   
-`*/
