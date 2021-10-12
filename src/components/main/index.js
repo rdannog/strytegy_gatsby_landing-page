@@ -182,19 +182,19 @@ export function Main({
                     </ul>
                 </S.List>
                 <S.UsersContainer>
-                    <h2>What the users are saying</h2>
-                    <div>
-                        <p>I really enjoy using Strytegy because I can share and organize my work script with my teammates dynamically, remotely and in real time. </p>
-                        <div>
+                    <S.UsersTitle>What the users are saying</S.UsersTitle>
+                    <S.UsersComment>
+                        <p style={{width:"75%", textAlign:"center"}}>"I really enjoy using Strytegy because I can share and organize my work script with my teammates dynamically, remotely and in real time." </p>
+                        <S.UserInfo>
                             <div>
-                                <img style={{width:"4vw", height:"10vh", borderRadius:"50%"}} src="https://media.graphcms.com/OTNobCioT8uGxRJCeCku"/>
+                                <img style={{width:"4.5vw", height:"11vh", borderRadius:"50%"}} src="https://media.graphcms.com/OTNobCioT8uGxRJCeCku"/>
                             </div>
                             <div>
                                 <h3>Renan Carvalho</h3>
                                 <p>Product Designer at Vai na Web</p>
                             </div>
-                        </div>
-                    </div>
+                        </S.UserInfo>
+                    </S.UsersComment>
                     
                 </S.UsersContainer>
                 <div style={{backgroundColor: "rgb(236,231,247)"}}>

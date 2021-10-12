@@ -308,10 +308,40 @@ export const List =styled.section`
 export const UsersContainer = styled.section`
     height:75vh;
     color:white;
+    font-family: 'Paralucent';
+    font-size: 1.3vw;
     background-color: #22254B;
     display:flex;
+    align-items:center;
     flex-direction:column;
     justify-content: space-between;
+   
+`
+export const UsersTitle = styled.h2`
+    font-family: 'Paralucent';
+    font-size: 4.1vw;
+    font-weight: bolder;
+`
+export const UsersComment = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:10vh;
+`
+export const UserInfo = styled.div`
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 5vh;
+    p,h3{
+        margin:0;
+    }
+    h3{
+        font-size:1.8vw;
+    }
+    img{
+        margin-right: 1vw;
+    }
 `
 /*export const  =styled.`
    
