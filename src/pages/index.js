@@ -6,6 +6,7 @@ import { Footer } from "../components/footer"
 import { createGlobalStyle } from "styled-components";
 import Soleto from "../fonts/Soleto-Regular/Soleto-Regular.ttf"
 import Paralucent from "../fonts/Paralucent/Paralucent.ttf"
+import { Title } from "react-head";
 
 export const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -38,8 +39,8 @@ body{
 
 export const query = graphql`
   query {
-    completedata {
-      projects{
+    alldata {
+      projects {
         backgroundHeader {
           url
         }
@@ -88,15 +89,49 @@ export const query = graphql`
         strytegyTitle
         subtitle
         title
+        collabButton
+        collabText1
+        collabText2
+        collabTitle
+        dataTitle
+        dataImage {
+          url
+        }
+        footerBlog
+        footerCopyright
+        footerFace
+        footerFaq
+        footerInsta
+        footerLink
+        footerListTitle1
+        footerListTitle2
+        footerName
+        footerNumber
+        footerPrivacy
+        footerSubtitle
+        footerSupport
+        footerTerms
+        footerTitle
+        listItem1
+        listItem2
+        listItem3
+        usersTitle
+        userName
+        userCompany
+        userComment
+        userIcon {
+          url
+        }
       }
     }
   }
 `
 export default function Index ({ data }) {
-  const dataMain = data.completedata.projects[0]
+  const dataMain = data.alldata.projects[0]
   return (
     <div>
       {console.log(data)}
+      <Title>Strytegy</Title>
       <GlobalStyle/>
       <Header
         logo={dataMain.logo.url}

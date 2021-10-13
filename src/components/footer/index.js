@@ -44,6 +44,7 @@ export function Footer({
                             <li>Instagram</li>
                             <li>Facebook</li>
                             <li>LinkedIn</li>
+                            <li>Blog</li>
                         </ul>
                     </S.FooterList>
                     <S.FooterList>
