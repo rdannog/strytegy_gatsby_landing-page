@@ -11,7 +11,7 @@ export function Header({
     return (
         <S.Container>
             <S.LogoContainer>
-                <S.Logo src={logo}/>
+                <S.Logo src={logo} alt=""/>
             </S.LogoContainer>
             <S.Navigation>
                 <S.ButtonBlogFaq>

@@ -6,7 +6,6 @@ import { Footer } from "../components/footer"
 import { createGlobalStyle } from "styled-components";
 import Soleto from "../fonts/Soleto-Regular/Soleto-Regular.ttf"
 import Paralucent from "../fonts/Paralucent/Paralucent.ttf"
-import { Title } from "react-head";
 
 export const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -131,7 +130,6 @@ export default function Index ({ data }) {
   return (
     <div>
       {console.log(data)}
-      <Title>Strytegy</Title>
       <GlobalStyle/>
       <Header
         logo={dataMain.logo.url}
@@ -170,8 +168,38 @@ export default function Index ({ data }) {
         gridItem4={dataMain.gridItem4}
         gridItem5={dataMain.gridItem5}
         gridItem6={dataMain.gridItem6}
+        dataTitle={dataMain.dataTitle}
+        dataImage={dataMain.dataImage.url}
+        listItem1={dataMain.listItem1}
+        listItem2={dataMain.listItem2}
+        listItem3={dataMain.listItem3}
+        usersTitle={dataMain.usersTitle}
+        userName={dataMain.userName}
+        userCompany={dataMain.userCompany}
+        userComment={dataMain.userComment}
+        userIcon={dataMain.userIcon.url}
       />
-      <Footer />
+      <Footer 
+        footerBlog={dataMain.footerBlog}
+        footerCopyright={dataMain.footerCopyright}
+        footerFace={dataMain.footerFace}
+        footerFaq={dataMain.footerFaq}
+        footerInsta={dataMain.footerInsta}
+        footerLink={dataMain.footerLink}
+        footerListTitle1={dataMain.footerListTitle1}
+        footerListTitle2={dataMain.footerListTitle2}
+        footerName={dataMain.footerName}
+        footerNumber={dataMain.footerNumber}
+        footerPrivacy={dataMain.footerPrivacy}
+        footerSubtitle={dataMain.footerSubtitle}
+        footerSupport={dataMain.footerSupport}
+        footerTerms={dataMain.footerTerms}
+        footerTitle={dataMain.footerTitle}
+        collabButton={dataMain.collabButton}
+        collabText1={dataMain.collabText1}
+        collabText2={dataMain.collabText2}
+        collabTitle={dataMain.collabTitle}
+      />
     </div>
 
   )

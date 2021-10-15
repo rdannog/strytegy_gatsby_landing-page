@@ -30,7 +30,17 @@ export function Main({
     gridItem3,
     gridItem4,
     gridItem5,
-    gridItem6
+    gridItem6,
+    dataTitle,
+    dataImage,
+    listItem1,
+    listItem2,
+    listItem3,
+    usersTitle,
+    userName,
+    userCompany,
+    userComment,
+    userIcon
 }) {
     return (
         <S.Container>
@@ -165,33 +175,33 @@ export function Main({
                 </S.GridWrapper>
                 <S.BlankSpace/>
                 <S.DataContainer>
-                    <h2>Your data is safe</h2>
-                    <img style={{width:"60vw"}} src="https://www.strytegy.com/static/security-3b980a306563c64f34ffb76769f48cf0.webp"/>
+                    <h2>{dataTitle}</h2>
+                    <img style={{width:"60vw"}} src={dataImage} alt=""/>
                 </S.DataContainer>
                 <S.List>
                     <ul>
                         <li>
-                            • Strytegy follows the Brazilian Federal law number 13.709/18 (Brazilian General Personal Data Protection Law – “LGPD”)
+                            {listItem1}
                         </li>
                         <li>
-                            • The security is compatible with the certifications CSA, SOC 1-3, ISO/IEC 27001, SO/IEC 27017, ISO/IEC 27018 and ISO 9001.
+                            {listItem2}
                         </li>
                         <li>
-                            • Strytegy follows the Allowlisting protocol: a measure that reduces harmful security attacks by allowing only trusted files, canvases, journeys and processes to be run.
+                            {listItem3}
                         </li>
                     </ul>
                 </S.List>
                 <S.UsersContainer>
-                    <S.UsersTitle>What the users are saying</S.UsersTitle>
+                    <S.UsersTitle> {usersTitle} </S.UsersTitle>
                     <S.UsersComment>
-                        <p style={{width:"75%", textAlign:"center"}}>"I really enjoy using Strytegy because I can share and organize my work script with my teammates dynamically, remotely and in real time." </p>
+                        <p style={{width:"75%", textAlign:"center"}}>"{userComment}" </p>
                         <S.UserInfo>
                             <div>
-                                <img style={{width:"4.5vw", height:"11vh", borderRadius:"50%"}} src="https://media.graphcms.com/OTNobCioT8uGxRJCeCku"/>
+                                <img style={{width:"4.5vw", height:"11vh", borderRadius:"50%"}} src={  userIcon} alt=""/>
                             </div>
                             <div>
-                                <h3>Renan Carvalho</h3>
-                                <p>Product Designer at Vai na Web</p>
+                                <h3>{userName}</h3>
+                                <p>{userCompany}</p>
                             </div>
                         </S.UserInfo>
                     </S.UsersComment>

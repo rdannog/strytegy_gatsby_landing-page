@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const Container =styled.div`
     padding-top: 17vh;
 `
+/*@media screen and (max-width: px) {
+        
+    }*/
 export const IntroContainer =styled.section`
     width: 97%;
     height: 90vh;
@@ -23,7 +26,7 @@ export const IntroContent =styled.div`
     justify-content: center;
 `
 export const Title =styled.div`
-height:55%;
+    height:55%;
     font-family: 'Paralucent';
     font-weight: bolder;
     font-size: 3.2vw;
